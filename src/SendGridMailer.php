@@ -2,13 +2,14 @@
 
 namespace Price2Performance\SendGrid;
 
+use Nette\Mail\Mailer;
 use Nette\Mail\Message;
 use Nette\SmartObject;
 use SendGrid;
 use SendGrid\Mail\Mail;
 use SendGrid\Response;
 
-class SendGridMailer
+class SendGridMailer implements Mailer
 {
     use SmartObject;
 
