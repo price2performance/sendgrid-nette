@@ -14,7 +14,7 @@ class SendGridExtension extends CompilerExtension
     public function getConfigSchema(): Schema
 	{
 		return Expect::structure([
-			'key' => Expect::string(),
+			'key' => Expect::string()->dynamic(),
 			'options' => Expect::anyof(
 				Expect::string(),
 				Expect::array()
