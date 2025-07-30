@@ -3,6 +3,7 @@
 namespace Price2Performance\SendGrid\DI;
 
 use Nette\DI\CompilerExtension;
+use Nette\Mail\Mailer;
 use Nette\Schema\Expect;
 use Nette\Schema\Schema;
 use Price2Performance\SendGrid\SendGridMailer;
@@ -26,6 +27,9 @@ class SendGridExtension extends CompilerExtension
 	{
 		$builder = $this->getContainerBuilder();
 		$config = $this->config;
+
+        $originalMailer = $builder->getDefinitionByType(Mailer::class);
+        $originalMailer->setAutowired(false);
 
 		$sendgrid = $builder->addDefinition($this->prefix('sendgrid'))
 			->setFactory(SendGrid::class, [
