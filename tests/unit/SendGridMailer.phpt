@@ -75,7 +75,7 @@ class SendGridMailerTest extends TestCase
 		Assert::same('filename.txt', $attachement->getFilename());
 		Assert::same(base64_encode('CONTENT OF THE ATTACHMENT'), $attachement->getContent());
 
-		Assert::same($response, $mailer->getLastReponse());
+		Assert::same($response, $mailer->getLastResponse());
 	}
 
 }
