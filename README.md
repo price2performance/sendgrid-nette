@@ -67,6 +67,7 @@ Calling `getLastResponse()` on `SendGridMailer` gets you `SendGrid\Response` of 
 
 ## Versions
 
-| Version |Nette|SendGrid API|PHP
-|---------|:---:|:---:|:---:|
-| 2.0     |^3.0|^7.4|7.1 - 8.3
+| Version |    Nette     | SendGrid API |PHP
+|---------|:------------:|:------------:|:---:|
+| 2.0     |     ^3.0     |     ^7.4     |7.1 - 8.3
+| 2.1     | ^3.0 or ^4.0 |     ^8.1     |7.1 - 8.4
