@@ -5,7 +5,7 @@
         "php": ">=7.1",
         "nette/mail": "^3.0|^4.0",
         "nette/di": "^3.0",
-        "sendgrid/sendgrid": "^7.4"
+        "sendgrid/sendgrid": "^7.4|^8.1"
     },
     "require-dev": {
         "latte/latte": "^2.7",
