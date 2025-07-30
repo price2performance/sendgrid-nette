@@ -9,8 +9,8 @@
     },
     "require-dev": {
         "latte/latte": "^3.0",
-        "nette/application": "^3.2",
-        "nette/bootstrap": "^3.2",
+        "nette/application": "^3.0",
+        "nette/bootstrap": "^3.0",
         "nette/tester": "^2.5",
         "mockery/mockery": "^1.6"
     },
